@@ -1,0 +1,15 @@
+<%= form_for @question do |f| %>
+  <div>
+    <%= f.label(:asker, "Who's asking?") %>
+    <%= f.text_field(:asker) %>
+  </div>
+
+  <div>
+    <%= f.label(:question, "What's the question?") %>
+    <%= f.text_field(:question) %>
+  </div>
+
+  <div>
+    <%= f.submit("Create Question") %>
+  </div
+<% end %>
