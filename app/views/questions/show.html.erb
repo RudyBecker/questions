@@ -1,0 +1,4 @@
+<h1><%= @question.asker %> is asking:</h1>
+<p><%= @question.question%></p>
+
+<p><%= link_to 'Add Your Response', new_question_response_path(@question)%></p>

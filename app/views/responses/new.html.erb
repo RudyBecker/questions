@@ -1,0 +1,15 @@
+<%= form_for @response, url: question_responses_path(@response.question) do |f| %>
+  <div>
+    <%= f.label(:responder, "Who's responding?") %>
+    <%= f.text_field(:responder) %>
+  </div>
+
+  <div>
+    <%= f.label(:response, @response.question.question) %>
+    <%= f.text_field(:response) %>
+  </div>
+
+  <div>
+    <%= f.submit("Submit Response") %>
+  </div
+<% end %>
