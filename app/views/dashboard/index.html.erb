@@ -4,15 +4,22 @@
 
 <h2>Number of responses from Abraham Lincoln: <%= @lincoln_response_count %></h2>
 
-<h2>10 most recent responses</h2>
-<% @recent_responses.each do |response| %>
-  <%= render("response_card", response: response)%>
-<% end %>
+<div class="grid">
+  <div class="column">
+    <h2>10 most recent responses</h2>
+    <% @recent_responses.each do |response| %>
+      <%= render("response_card", response: response)%>
+    <% end %>
+  </div>
 
-<h2>Tagged Responses</h2>
-<%= @tagged_responses %>
+  <div class="column">
+    <h2>Tagged Responses</h2>
+    <form action="">
+      <input type="text" placeholder="tag name"/>
+      <button type="submit">Search for responses</button>
+    </form>
+    
+    <% @tagged_responses %>
+  </div>
+</div>
 
-<form>
-<input type="text" placeholder="tag name"/>
-<button type="submit">Search for responses</button>
-</form>

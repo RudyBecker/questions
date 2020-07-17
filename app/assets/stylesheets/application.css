@@ -18,10 +18,20 @@
   border: 1px solid black;
   box-shadow: 10px 5px 5px black;
   width: 30rem;
-  margin: 1rem 0;
+  margin: 1rem 5rem 1rem 0;
   padding: 1rem;
 }
 
 body {
   padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80rem;
+}
+
+.tag-submit {
+  margin-top: 1rem;
 }
