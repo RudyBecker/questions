@@ -1,31 +1,16 @@
 <h1>Dashboard</h1>
 
-<h2>Number of responses with the word "banana" in them</h2>
-<%= @banana_response_count %>
+<h2>Number of responses with the word "banana" in them: <%= @banana_response_count %></h2>
 
-<h2>Number of responses from Abraham Lincoln</h2>
-<%= @lincoln_response_count %>
+<h2>Number of responses from Abraham Lincoln: <%= @lincoln_response_count %></h2>
 
 <h2>10 most recent responses</h2>
 <% @recent_responses.each do |response| %>
-<div class="response-card">
-  <h3><%= response.question.question %></h3>
-  <p><strong>Responder: </strong><%= response.responder %></p>
-  <p><strong>Response: </strong><%= response.response %></p>
-
-  <%= form_for response.taggings.new do |f| %>
-    <%= f.hidden_field(:response_id, value: response.id) %>
-    <div>
-      <%= f.label(:tag, "Tag:") %>
-      <%= f.text_field(:tag) %>
-    </div>
-    <button type="submit">Tag This Response</button>
-  <% end %>
-
-</div>
+  <%= render("response_card", response: response)%>
 <% end %>
 
 <h2>Tagged Responses</h2>
+<%= @tagged_responses %>
 
 <form>
 <input type="text" placeholder="tag name"/>
