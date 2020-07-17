@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.response-card {
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px black;
+  width: 30rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}

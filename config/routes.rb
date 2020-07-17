@@ -5,5 +5,9 @@ Rails.application.routes.draw do
     resources :responses, only: [:new, :create]
   end
 
+  resources :taggings, only: [:create]
+
+  get "/dashboard", to: "dashboard#index"
+
   root to: 'questions#new'
 end
