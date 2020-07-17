@@ -1,0 +1,16 @@
+<div class="response-card">
+  <h3><%= response.question.question %></h3>
+  <p><strong>Responder: </strong><%= response.responder %></p>
+  <p><strong>Response: </strong><%= response.response %></p>
+  <p>Tags: insert tags here...</p> 
+
+  <%= form_for response.taggings.new do |f| %>
+    <%= f.hidden_field(:response_id, value: response.id) %>
+    <div>
+      <%= f.label(:tag, "Tag:") %>
+      <%= f.text_field(:tag) %>
+    </div>
+    <button type="submit">Tag This Response</button>
+  <% end %>
+
+</div>
