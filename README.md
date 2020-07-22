@@ -1,11 +1,13 @@
-** Setup **
-* `Bundle install`
+**Setup**
+* `bundle install`
 * `rails db:setup`
 * `rails s`
 
-** Activity **
+**Activity**
+
+You can create new questions at `http://localhost:3000`.
+
 You can see question and response activity at `http://localhost:3000/dashboard`
-You can create new questions at `http://localhost:3000`
 
 **A note on testing views**
 
