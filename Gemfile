@@ -11,7 +11,7 @@ gem 'sqlite3'
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.x'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

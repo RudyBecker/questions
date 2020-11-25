@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :taggings, only: [:create]
 
   get "/dashboard", to: "dashboard#index"
-
+  get "/react-dashboard", to: "dashboard#react_dashboard"
+  
   root to: 'questions#new'
 end
