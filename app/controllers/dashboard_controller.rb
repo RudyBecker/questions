@@ -6,4 +6,7 @@ class DashboardController < ApplicationController
     @recent_responses = Response.all.shuffle.take(2)
     @tagged_responses = nil
   end
+
+  def react_dashboard
+  end
 end
