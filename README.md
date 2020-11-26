@@ -1,6 +1,9 @@
 **Setup**
 * `bundle install`
 * `rails db:setup`
+* `npm install -g yarn`
+* `yarn install`
+* `bin/webpack --watch --colors --progress`
 * `rails s`
 
 **Activity**
