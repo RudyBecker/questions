@@ -1,10 +1,10 @@
+**Prerequisite**
+* Docker Desktop installed - [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
 **Setup**
-* `bundle install`
-* `rails db:setup`
-* `npm install -g yarn`
-* `yarn install`
-* `bin/webpack --watch --colors --progress`
-* `rails s`
+* `docker-compose build`
+* `docker-compose run web bundle exec rails db:create db:setup`
+* `docker-compose up`
 
 **Activity**
 
