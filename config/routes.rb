@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      get '/recent_responses', to: 'dashboard#index'
+      get '/responses', to: 'responses#index'
     end
   end
   
