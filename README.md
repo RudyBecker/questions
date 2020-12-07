@@ -4,6 +4,7 @@
 **Setup**
 * `docker-compose build`
 * `docker-compose run web bundle exec rails db:create db:setup`
+* `docker-compose run web yarn`
 * `docker-compose up`
 
 **Activity**
@@ -14,7 +15,7 @@ You can see question and response activity at `http://localhost:3000/dashboard`
 
 You can also view the React version of the dashboard at `http://localhost:3000/react-dashboard`
 
-** Helpful Docker things
+**Helpful Docker things**
 * `docker-compose run web <command>` to run an arbitrary command in the running container named `web`
 * `docker ps` to see a list of running containers
 * `docker exec -it <container ID> /bin/bash` to get a command prompt in a running container (use `docker ps` to see container IDs)
